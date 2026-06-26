@@ -21,7 +21,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-surface border border-border text-xs font-body font-500 text-muted tracking-wider uppercase">
+          <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-surface border border-border text-xs font-mono text-muted tracking-wider uppercase">
             <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
             Software Consultancy
           </span>
@@ -32,7 +32,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4, ease: [0.23, 1, 0.32, 1] }}
-          className="mt-8 font-display font-800 text-5xl sm:text-6xl md:text-7xl lg:text-8xl leading-[0.95] tracking-tight"
+          className="mt-8 font-display font-extrabold text-5xl sm:text-6xl md:text-7xl lg:text-8xl leading-[0.95] tracking-tight"
         >
           We Build Software
           <br />
@@ -46,7 +46,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.7 }}
-          className="mt-8 text-lg md:text-xl text-muted max-w-2xl mx-auto leading-relaxed font-body font-300"
+          className="mt-8 text-lg md:text-xl text-muted max-w-2xl mx-auto leading-relaxed font-body font-light"
         >
           Stadia Consulting Group partners with businesses to design, develop,
           and deploy web and mobile applications that deliver real impact.
@@ -61,14 +61,14 @@ export default function Hero() {
         >
           <a
             href="#contact"
-            className="group relative px-8 py-4 rounded-full bg-accent text-background font-body font-600 text-sm tracking-wide overflow-hidden transition-transform duration-300 hover:scale-[1.02]"
+            className="group relative px-8 py-4 rounded-full bg-accent text-background font-body font-semibold text-sm tracking-wide overflow-hidden transition-transform duration-300 hover:scale-[1.02]"
           >
             <span className="relative z-10">Start a Project</span>
             <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out" />
           </a>
           <a
             href="#work"
-            className="px-8 py-4 rounded-full border border-border text-muted hover:text-foreground hover:border-border-hover font-body font-500 text-sm tracking-wide transition-all duration-300"
+            className="px-8 py-4 rounded-full border border-border text-muted hover:text-foreground hover:border-border-hover font-body font-medium text-sm tracking-wide transition-all duration-300"
           >
             View Our Work
           </a>
@@ -82,7 +82,7 @@ export default function Hero() {
           className="absolute bottom-12 left-1/2 -translate-x-1/2"
         >
           <div className="flex flex-col items-center gap-2">
-            <span className="text-[10px] uppercase tracking-[0.25em] text-muted font-body">
+            <span className="text-[10px] uppercase tracking-[0.25em] text-muted font-mono">
               Scroll
             </span>
             <motion.div

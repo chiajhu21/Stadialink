@@ -1,16 +1,16 @@
 @import "tailwindcss";
 
 :root {
-  --background: #050505;
-  --foreground: #e8e8e8;
-  --surface: #0c0c0c;
-  --surface-hover: #141414;
-  --border: #1a1a1a;
-  --border-hover: #2a2a2a;
-  --muted: #666666;
-  --accent: #00e5ff;
-  --accent-dim: #00b8cc;
-  --accent-glow: rgba(0, 229, 255, 0.15);
+  --background: #0b0d12;
+  --foreground: #e7e9ee;
+  --surface: #14161d;
+  --surface-hover: #1b1e26;
+  --border: #20232c;
+  --border-hover: #2d313c;
+  --muted: #8a909e;
+  --accent: #0c7cf4;
+  --accent-dim: #0a63c4;
+  --accent-glow: rgba(12, 124, 244, 0.18);
 }
 
 @theme inline {
@@ -24,12 +24,14 @@
   --color-accent: var(--accent);
   --color-accent-dim: var(--accent-dim);
   --color-accent-glow: var(--accent-glow);
-  --font-display: var(--font-syne);
-  --font-body: var(--font-dm-sans);
+  --font-display: var(--font-sora);
+  --font-body: var(--font-manrope);
+  --font-mono: var(--font-space-mono);
 }
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
 }
 
 body {
@@ -47,9 +49,9 @@ body {
 /* Gradient mesh */
 .gradient-mesh {
   background:
-    radial-gradient(ellipse at 20% 50%, rgba(0, 229, 255, 0.06) 0%, transparent 50%),
-    radial-gradient(ellipse at 80% 20%, rgba(0, 229, 255, 0.04) 0%, transparent 50%),
-    radial-gradient(ellipse at 50% 80%, rgba(0, 184, 204, 0.03) 0%, transparent 50%);
+    radial-gradient(ellipse at 20% 50%, rgba(12, 124, 244, 0.10) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 20%, rgba(12, 124, 244, 0.07) 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 80%, rgba(12, 124, 244, 0.05) 0%, transparent 50%);
 }
 
 /* Noise texture overlay */
@@ -128,6 +130,6 @@ body {
 
 /* Selection */
 ::selection {
-  background: rgba(0, 229, 255, 0.2);
+  background: rgba(12, 124, 244, 0.28);
   color: var(--foreground);
 }

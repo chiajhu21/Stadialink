@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Mark } from "./Logo";
 
 const navLinks = [
   { label: "Services", href: "#services" },
@@ -34,13 +35,13 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2 group">
-            <div className="w-8 h-8 rounded-md bg-accent/10 border border-accent/20 flex items-center justify-center group-hover:bg-accent/20 transition-colors duration-300">
-              <span className="font-display font-800 text-accent text-sm">
-                S
-              </span>
-            </div>
-            <span className="font-display font-700 text-lg tracking-tight">
+          <a
+            href="#"
+            aria-label="Stadia — home"
+            className="flex items-center gap-2.5 group"
+          >
+            <Mark className="w-7 h-7 text-accent transition-transform duration-300 group-hover:translate-x-0.5" />
+            <span className="font-display font-extrabold text-lg tracking-tight">
               Stadia
             </span>
           </a>
@@ -51,14 +52,14 @@ export default function Navbar() {
               <a
                 key={link.href}
                 href={link.href}
-                className="accent-underline text-sm text-muted hover:text-foreground transition-colors duration-300 font-body font-500"
+                className="accent-underline text-sm text-muted hover:text-foreground transition-colors duration-300 font-body font-medium"
               >
                 {link.label}
               </a>
             ))}
             <a
               href="#contact"
-              className="text-sm font-body font-600 px-5 py-2.5 rounded-full bg-accent/10 text-accent border border-accent/20 hover:bg-accent/20 hover:border-accent/40 transition-all duration-300"
+              className="text-sm font-body font-semibold px-5 py-2.5 rounded-full bg-accent/10 text-accent border border-accent/20 hover:bg-accent/20 hover:border-accent/40 transition-all duration-300"
             >
               Get in Touch
             </a>
@@ -102,7 +103,7 @@ export default function Navbar() {
                   key={link.href}
                   href={link.href}
                   onClick={() => setMobileOpen(false)}
-                  className="text-lg font-display font-500 text-muted hover:text-foreground transition-colors"
+                  className="text-lg font-display font-medium text-muted hover:text-foreground transition-colors"
                 >
                   {link.label}
                 </a>
@@ -110,7 +111,7 @@ export default function Navbar() {
               <a
                 href="#contact"
                 onClick={() => setMobileOpen(false)}
-                className="mt-2 text-center text-sm font-body font-600 px-5 py-3 rounded-full bg-accent/10 text-accent border border-accent/20"
+                className="mt-2 text-center text-sm font-body font-semibold px-5 py-3 rounded-full bg-accent/10 text-accent border border-accent/20"
               >
                 Get in Touch
               </a>

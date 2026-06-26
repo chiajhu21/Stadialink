@@ -58,10 +58,10 @@ export default function Services() {
           transition={{ duration: 0.6 }}
           className="mb-20"
         >
-          <span className="text-xs font-body font-500 text-accent uppercase tracking-[0.25em]">
+          <span className="text-xs font-mono text-accent uppercase tracking-[0.25em]">
             What We Do
           </span>
-          <h2 className="mt-4 font-display font-700 text-4xl md:text-5xl lg:text-6xl tracking-tight leading-[1.05]">
+          <h2 className="mt-4 font-display font-bold text-4xl md:text-5xl lg:text-6xl tracking-tight leading-[1.05]">
             End-to-end software
             <br />
             <span className="text-muted">development.</span>
@@ -100,12 +100,12 @@ export default function Services() {
                 </div>
 
                 {/* Title */}
-                <h3 className="font-display font-700 text-xl tracking-tight mb-3">
+                <h3 className="font-display font-bold text-xl tracking-tight mb-3">
                   {service.title}
                 </h3>
 
                 {/* Description */}
-                <p className="text-muted text-sm leading-relaxed font-body font-300 mb-6">
+                <p className="text-muted text-sm leading-relaxed font-body font-light mb-6">
                   {service.description}
                 </p>
 
@@ -114,7 +114,7 @@ export default function Services() {
                   {service.tags.map((tag) => (
                     <span
                       key={tag}
-                      className="text-[11px] font-body font-500 px-2.5 py-1 rounded-full bg-background border border-border text-muted"
+                      className="text-[11px] font-body font-medium px-2.5 py-1 rounded-full bg-background border border-border text-muted"
                     >
                       {tag}
                     </span>

@@ -56,16 +56,16 @@ export default function Portfolio() {
           className="mb-20 flex flex-col md:flex-row md:items-end md:justify-between gap-6"
         >
           <div>
-            <span className="text-xs font-body font-500 text-accent uppercase tracking-[0.25em]">
+            <span className="text-xs font-mono text-accent uppercase tracking-[0.25em]">
               Our Work
             </span>
-            <h2 className="mt-4 font-display font-700 text-4xl md:text-5xl lg:text-6xl tracking-tight leading-[1.05]">
+            <h2 className="mt-4 font-display font-bold text-4xl md:text-5xl lg:text-6xl tracking-tight leading-[1.05]">
               Selected
               <br />
               <span className="text-muted">projects.</span>
             </h2>
           </div>
-          <p className="text-muted text-sm font-body font-300 max-w-sm leading-relaxed">
+          <p className="text-muted text-sm font-body font-light max-w-sm leading-relaxed">
             A selection of projects that showcase our range — from mobile apps to
             enterprise platforms.
           </p>
@@ -101,27 +101,27 @@ export default function Portfolio() {
                 className={`h-48 bg-gradient-to-br ${project.color} flex items-center justify-center relative`}
               >
                 <div className="absolute inset-0 dot-grid opacity-50" />
-                <span className="relative z-10 font-display font-700 text-2xl text-foreground/10 group-hover:text-foreground/20 transition-colors duration-500 tracking-tight">
+                <span className="relative z-10 font-display font-bold text-2xl text-foreground/10 group-hover:text-foreground/20 transition-colors duration-500 tracking-tight">
                   {project.category}
                 </span>
               </div>
 
               {/* Content */}
               <div className="relative z-10 p-8">
-                <span className="text-[11px] font-body font-500 text-accent uppercase tracking-[0.2em]">
+                <span className="text-[11px] font-mono text-accent uppercase tracking-[0.2em]">
                   {project.category}
                 </span>
-                <h3 className="mt-2 font-display font-700 text-xl tracking-tight">
+                <h3 className="mt-2 font-display font-bold text-xl tracking-tight">
                   {project.title}
                 </h3>
-                <p className="mt-3 text-muted text-sm leading-relaxed font-body font-300">
+                <p className="mt-3 text-muted text-sm leading-relaxed font-body font-light">
                   {project.description}
                 </p>
                 <div className="mt-5 flex flex-wrap gap-2">
                   {project.tags.map((tag) => (
                     <span
                       key={tag}
-                      className="text-[11px] font-body font-500 px-2.5 py-1 rounded-full bg-background border border-border text-muted"
+                      className="text-[11px] font-body font-medium px-2.5 py-1 rounded-full bg-background border border-border text-muted"
                     >
                       {tag}
                     </span>

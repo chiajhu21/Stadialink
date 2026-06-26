@@ -41,15 +41,15 @@ export default function About() {
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: [0.23, 1, 0.32, 1] }}
           >
-            <span className="text-xs font-body font-500 text-accent uppercase tracking-[0.25em]">
+            <span className="text-xs font-mono text-accent uppercase tracking-[0.25em]">
               About Stadia
             </span>
-            <h2 className="mt-4 font-display font-700 text-4xl md:text-5xl tracking-tight leading-[1.1]">
+            <h2 className="mt-4 font-display font-bold text-4xl md:text-5xl tracking-tight leading-[1.1]">
               Built by engineers
               <br />
               <span className="text-muted">who ship.</span>
             </h2>
-            <div className="mt-8 space-y-5 text-muted text-base leading-relaxed font-body font-300">
+            <div className="mt-8 space-y-5 text-muted text-base leading-relaxed font-body font-light">
               <p>
                 Stadia Consulting Group is a software development consultancy
                 that partners with businesses to turn ideas into production-ready
@@ -83,13 +83,13 @@ export default function About() {
                 }}
                 className="group relative pl-16 border-l border-border hover:border-accent/30 transition-colors duration-500"
               >
-                <span className="absolute left-4 top-0 font-display font-700 text-sm text-accent/40 group-hover:text-accent/70 transition-colors duration-500">
+                <span className="absolute left-4 top-0 font-display font-bold text-sm text-accent/40 group-hover:text-accent/70 transition-colors duration-500">
                   {value.number}
                 </span>
-                <h3 className="font-display font-600 text-lg tracking-tight mb-2">
+                <h3 className="font-display font-semibold text-lg tracking-tight mb-2">
                   {value.title}
                 </h3>
-                <p className="text-muted text-sm leading-relaxed font-body font-300">
+                <p className="text-muted text-sm leading-relaxed font-body font-light">
                   {value.description}
                 </p>
               </motion.div>

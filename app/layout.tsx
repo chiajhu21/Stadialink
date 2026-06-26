@@ -1,20 +1,27 @@
 import type { Metadata } from "next";
-import { Syne, DM_Sans } from "next/font/google";
+import { Sora, Manrope, Space_Mono } from "next/font/google";
 import "./globals.css";
 
-const syne = Syne({
-  variable: "--font-syne",
+const sora = Sora({
+  variable: "--font-sora",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800"],
 });
 
-const dmSans = DM_Sans({
-  variable: "--font-dm-sans",
+const manrope = Manrope({
+  variable: "--font-manrope",
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
 });
 
+const spaceMono = Space_Mono({
+  variable: "--font-space-mono",
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
+
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.stadialink.com"),
   title: "Stadia Consulting Group | Software That Moves You Forward",
   description:
     "Stadia Consulting Group builds high-performance web and mobile applications. From strategy to deployment, we craft software that drives results.",
@@ -42,7 +49,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${syne.variable} ${dmSans.variable} h-full antialiased`}
+      className={`${sora.variable} ${manrope.variable} ${spaceMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-background text-foreground">
         {children}
