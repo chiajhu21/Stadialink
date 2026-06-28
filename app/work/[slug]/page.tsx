@@ -19,7 +19,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const project = getProjectBySlug(slug);
-  if (!project) return {};
+  if (!project) return { title: "Project Not Found — Stadia Consulting Group" };
   const title = `${project.title} — Stadia Consulting Group`;
   return {
     title,

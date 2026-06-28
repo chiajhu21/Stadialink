@@ -3,6 +3,7 @@ import { Sora, Manrope, Space_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import MotionProvider from "./components/MotionProvider";
 
 const sora = Sora({
   variable: "--font-sora",
@@ -54,9 +55,11 @@ export default function RootLayout({
       className={`${sora.variable} ${manrope.variable} ${spaceMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-background text-foreground">
-        <Navbar />
-        <div className="flex-1">{children}</div>
-        <Footer />
+        <MotionProvider>
+          <Navbar />
+          <div className="flex-1">{children}</div>
+          <Footer />
+        </MotionProvider>
       </body>
     </html>
   );

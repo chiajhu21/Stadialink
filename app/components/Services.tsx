@@ -9,7 +9,7 @@ const services = [
     description:
       "Full-stack web applications built with modern frameworks. From dashboards to SaaS platforms, we engineer for performance and scale.",
     icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-6 h-6">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-6 h-6" aria-hidden="true">
         <rect x="2" y="3" width="20" height="14" rx="2" />
         <path d="M8 21h8M12 17v4" />
         <path d="M7 8l3 3-3 3M13 14h4" strokeLinecap="round" strokeLinejoin="round" />
@@ -22,7 +22,7 @@ const services = [
     description:
       "Native and cross-platform mobile apps for iOS and Android. We build fast, fluid experiences your users will love.",
     icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-6 h-6">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-6 h-6" aria-hidden="true">
         <rect x="5" y="2" width="14" height="20" rx="3" />
         <path d="M12 18h.01" strokeLinecap="round" />
         <path d="M9 2v1.5a.5.5 0 00.5.5h5a.5.5 0 00.5-.5V2" />
@@ -35,7 +35,7 @@ const services = [
     description:
       "Technical leadership and architecture consulting. We help teams make the right technology decisions and ship with confidence.",
     icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-6 h-6">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-6 h-6" aria-hidden="true">
         <path d="M12 2L2 7l10 5 10-5-10-5z" />
         <path d="M2 17l10 5 10-5M2 12l10 5 10-5" />
       </svg>

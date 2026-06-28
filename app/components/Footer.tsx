@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Mark } from "./Logo";
+import { CopyrightYear } from "./CopyrightYear";
 
 export default function Footer() {
   return (
@@ -32,8 +33,8 @@ export default function Footer() {
 
           {/* Copyright */}
           <p className="text-xs text-muted/60 font-body font-light">
-            &copy; {new Date().getFullYear()} Stadia Consulting Group, LLC. All
-            rights reserved.
+            &copy; <CopyrightYear /> Stadia Consulting Group, LLC. All rights
+            reserved.
           </p>
         </div>
       </div>
