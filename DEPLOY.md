@@ -28,3 +28,11 @@ npx wrangler pages deploy out --project-name stadialink --branch main
 ## Before deploying
 
 If the contact form should deliver email, set `NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY` in `.env.local` **before** `npm run build` — otherwise the live form falls back to an "email us directly" message.
+
+> Turbopack can cache an older env value. If a freshly-set `NEXT_PUBLIC_*` key isn't picked up, do a clean rebuild: `rm -rf .next out && npm run build`.
+
+## Deployment log
+
+| Date       | Commit    | Summary                                                                                                                                  | Per-deploy URL                          |
+| ---------- | --------- | -------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------- |
+| 2026-06-28 | `5968d73` | Real anonymized portfolio refresh — 8 case studies, filterable Work grid, static `/work/[slug]` detail pages, Capabilities, a11y pass. Contact form wired via `.env.local`. | `https://02d1ca30.stadialink.pages.dev` |
