@@ -52,6 +52,16 @@ export default function Hero() {
           and deploy web and mobile applications that deliver real impact.
         </motion.p>
 
+        {/* Proof line — capability range, no invented metrics */}
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.8 }}
+          className="mt-6 text-xs font-mono text-muted/70 uppercase tracking-[0.2em]"
+        >
+          Web · Mobile · AI — across healthcare, government &amp; enterprise
+        </motion.p>
+
         {/* CTAs */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Mark } from "./Logo";
 
 export default function Footer() {
@@ -15,18 +16,18 @@ export default function Footer() {
 
           {/* Links */}
           <div className="flex items-center gap-6 text-xs font-body font-normal text-muted">
-            <a href="#services" className="hover:text-foreground transition-colors duration-300">
+            <Link href="/#services" className="hover:text-foreground transition-colors duration-300">
               Services
-            </a>
-            <a href="#about" className="hover:text-foreground transition-colors duration-300">
+            </Link>
+            <Link href="/#about" className="hover:text-foreground transition-colors duration-300">
               About
-            </a>
-            <a href="#work" className="hover:text-foreground transition-colors duration-300">
+            </Link>
+            <Link href="/#work" className="hover:text-foreground transition-colors duration-300">
               Work
-            </a>
-            <a href="#contact" className="hover:text-foreground transition-colors duration-300">
+            </Link>
+            <Link href="/#contact" className="hover:text-foreground transition-colors duration-300">
               Contact
-            </a>
+            </Link>
           </div>
 
           {/* Copyright */}

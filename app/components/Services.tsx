@@ -15,7 +15,7 @@ const services = [
         <path d="M7 8l3 3-3 3M13 14h4" strokeLinecap="round" strokeLinejoin="round" />
       </svg>
     ),
-    tags: ["React", "Next.js", "Node.js", "TypeScript"],
+    tags: ["Next.js", ".NET", "React", "TypeScript"],
   },
   {
     title: "Mobile Development",
@@ -28,7 +28,7 @@ const services = [
         <path d="M9 2v1.5a.5.5 0 00.5.5h5a.5.5 0 00.5-.5V2" />
       </svg>
     ),
-    tags: ["Flutter", "React Native", "Swift", "Kotlin"],
+    tags: ["Flutter", "Bloc", "Firebase", "Dart"],
   },
   {
     title: "Consulting & Strategy",
@@ -40,7 +40,7 @@ const services = [
         <path d="M2 17l10 5 10-5M2 12l10 5 10-5" />
       </svg>
     ),
-    tags: ["Architecture", "Cloud", "DevOps", "AI/ML"],
+    tags: ["Architecture", "Cloud", "AI / RAG", "Migrations"],
   },
 ];
 
