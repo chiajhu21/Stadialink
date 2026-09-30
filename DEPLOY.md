@@ -35,4 +35,5 @@ If the contact form should deliver email, set `NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY`
 
 | Date       | Commit    | Summary                                                                                                                                  | Per-deploy URL                          |
 | ---------- | --------- | -------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------- |
+| 2026-09-30 | `a88a6c7` | Added the CaseBook MD privacy policy page (`/casebook-md/privacy`) and a "CaseBook MD Privacy" footer link; footer links now wrap on narrow screens. Built with the contact-form key present. | `https://0214995e.stadialink.pages.dev` |
 | 2026-06-28 | `5968d73` | Real anonymized portfolio refresh — 8 case studies, filterable Work grid, static `/work/[slug]` detail pages, Capabilities, a11y pass. Contact form wired via `.env.local`. | `https://02d1ca30.stadialink.pages.dev` |
