@@ -16,7 +16,7 @@ export default function Footer() {
           </div>
 
           {/* Links */}
-          <div className="flex items-center gap-6 text-xs font-body font-normal text-muted">
+          <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs font-body font-normal text-muted">
             <Link href="/#services" className="hover:text-foreground transition-colors duration-300">
               Services
             </Link>
@@ -28,6 +28,9 @@ export default function Footer() {
             </Link>
             <Link href="/#contact" className="hover:text-foreground transition-colors duration-300">
               Contact
+            </Link>
+            <Link href="/casebook-md/privacy" className="whitespace-nowrap hover:text-foreground transition-colors duration-300">
+              CaseBook MD Privacy
             </Link>
           </div>
 
